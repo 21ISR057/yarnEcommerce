@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <script src="login.js" defer></script> -->
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="Rsult.html" id="form">
+            <div class="user">
+                <div class="input-box">
+                    <span class="det">Username</span>
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <div class="error"></div>
+                </div>
+                <div class="input-box">
+                    <span class="det">Password</span>
+                    <input type="password" id="pass" placeholder="Enter your password">
+                    <div class="error"></div>
+                </div>
+            </div>
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+    </div>
+    <script>
+        $(document).ready(function() {
+    $(".button").click(function() {
+        if (validateForm()) {
+            window.location.href = "Home.html";
+        }
+    });
+});
+         $(document).ready(function() {
+        $("#username").on("input", function() {
+            validateUsername($(this).val());
+        });
+    });
+    $(document).ready(function() {
+        $("#passval").on("input", function() {
+            validatePassword($(this).val());
+        });
+    });
+    function validateForm() {
+    var usernameval = $("#username").val();
+    var passval = $("#pass").val();
+    var succes=true;
+
+    if(usernameval===''){
+        succes=false;
+        setError(username,"Username is required");
+    }
+    else{
+        setSucces(username);
+     }
+
+    if(passval===''){
+        succes=false;
+        setError(pass,"Password is required");
+    }
+    else if(passval.length<=8){
+        succes=false
+        setError(pass,"Must have atleast 8 character");
+    }
+    else{
+        setSucces(pass);
+         }
+         return succes=false;
+    }
+    function showError(message) {
+    $("#errorDiv").append("<p class='error'>" + message + "</p>");
+}
+    </script>
+</body>
+</html>

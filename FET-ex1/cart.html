@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Items</title>
+    <link rel="stylesheet" href="cart.css">
+    <style>
+        /* CSS styles here */
+    </style>
+</head>
+<body>
+    <div class='cartitems'>
+        <div class="cartitems-format-main">
+            <p>Products</p>
+            <p>Title</p>
+            <p>Price</p>
+            <p>Quantity</p>
+            <p>Total</p>
+            <p>Remove</p>
+        </div>
+        <hr/>
+        
+        <!-- Sample product item (repeat for each product in the cart) -->
+        <div class="cartitems-format cartitems-format-main">
+            <img src='sample_image.jpg' alt='' class='carticon-product-icon'/>
+            <p>Product Name</p>
+            <p>RS 100.00</p>
+            <button class='cartitems-quantity'>2</button>
+            <p>200.00</p>
+            <img class='cartitems-remove-icon' src='remove.png' alt=''/>
+        </div>
+        <hr/>
+
+        <!-- Total cart amount -->
+        <div class="cartitems-down">
+            <div class="cartitems-total">
+                <h1>Cart Total</h1>
+                <div>
+                    <div class="cartitems-total-items">
+                        <p>Subtotal</p>
+                        <p>Rs 200.00</p>
+                    </div>
+                    <hr/>
+                    <div class="cartitems-total-items">
+                        <h3>Total</h3>
+                        <h3>Rs 200.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

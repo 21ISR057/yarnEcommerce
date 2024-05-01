@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url('corchet.jpg'); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('corchet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 100vmax; */
+    /* background: linear-gradient(135deg,#ebc7d3,#d086deeb); */
+     
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: linear-gradient(135deg,#ebc7d3,#d086deeb);
+    padding: 20px 30px;
+    border-radius: 2px;
+}
+.container .title{
+    font-size: 22px;
+    /* font-weight: 500px; */
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #928282;
+}
+.container form .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user .input-box{
+    margin: 15px;
+    width: calc(100% /2 -20px);
+}
+.user .input-box .det{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.user .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.input-box .error{
+    color: red;
+    font-size: 12px;
+    margin-top: 3px ;
+
+}
+.input-box .success input{
+    color: green;
+}
+
+.input-box .error input{
+    color: rgb(217, 10, 10);
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: fff;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg,#d82863,#c561d9eb);
+}
+form .button input:hover{
+    background: linear-gradient(135deg,#d086deeb,#ebc7d3);
+}

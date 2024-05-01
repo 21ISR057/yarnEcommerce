@@ -1,0 +1,154 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the navbar links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 10px;
+  }
+  
+  /* Change link color on hover */
+  nav a:hover {
+    color: #ddd;
+  }
+  
+  /* Styling for the search bar */
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  
+  /* Styling for the shopping cart icon */
+  .cart-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  /* Styling for user account options */
+  .user-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add additional styling for user account links, etc. */
+          .card-container{
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+          
+          }
+          /* Basic styling for the card */
+          .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.3s;
+          }
+      
+          /* Styling for the card content */
+          .card-content {
+            padding: 20px;
+          }
+      
+          /* Styling for the card title */
+          .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+      
+          /* Styling for the card description */
+          .card-description {
+            color: #555;
+          }
+      
+          /* Hover effect on the card */
+          .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+          }
+           /* Styling for the card image */
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      footer {
+              background-color: #333;
+              color: #fff;
+              padding: 20px 0;
+          }
+          .container {
+              width: 80%;
+              margin: 0 auto;
+          }
+          .row {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+          }
+          .col-md-4 {
+              width: 30%;
+              padding: 0 15px;
+          }
+          h4 {
+              font-size: 1.2em;
+              margin-bottom: 10px;
+          }
+          p {
+              font-size: 0.9em;
+          }
+          ul {
+              list-style-type: none;
+              padding: 0;
+          }
+          ul li {
+              margin-bottom: 5px;
+          }
+          ul.social-icons li {
+              display: inline-block;
+              margin-right: 10px;
+          }
+          ul.social-icons li a {
+              color: #fff;
+              font-size: 1.5em;
+          }
+          .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+        }
+        
+        .footer-nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .footer-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        

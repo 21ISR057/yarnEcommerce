@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="about.css">
+    <script type="text/javascript" src="about.js"></script>
+</head>
+<body>
+    <header class="header-wrp">
+        <nav class="header-area">
+            <div class="header-container">
+              <div class="site-nav-menu">
+             <ul class="primary-menu">
+              <li><a href="Home.html" class="active">Home</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="ecomerce.html" class="active">Ecommerce</a></li>
+              <li><a href="#" class="active">Contact</a></li>
+             </ul>
+           </div>
+         </div>
+      </nav>
+</header>
+    <h1>YARN</h1>
+  <div class="container">
+    <div class="slider-wrapper">
+      <div class="inner-wrapper">
+        <img src="s1.jpg" class="slide">
+                <img src="s2.jpg"class='slide'>
+                <img src="s3.jpg" class='slide'>
+                <img src="s7.jpg"class='slide'>
+      </div>
+    </div>
+
+    <div class="button prev"></div>
+    <div class="button next"></div>
+  </div>
+  <p class="fade-in">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cum similique exercitationem velit possimus quibusdam nemo quis error ipsum temporibus ullam est necessitatibus rem libero mollitia eum corporis unde, consequuntur deserunt repudiandae. Magnam officiis doloribus minima exercitationem! Harum, commodi delectus?
+  </p>
+  <div class="content">
+    <h2>Our Story</h2>
+    <div class="story-item">
+        <img src="corchet.jpg" alt="Story Image" class="story-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at felis sit amet lorem rhoncus malesuada vitae non risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper, dolor eu porta eleifend, dolor libero tempor nulla, nec fringilla mauris mauris in libero. Nullam ultrices urna nec neque fermentum, in rhoncus odio placerat. Sed sollicitudin ultricies neque, et ultricies elit. Donec consectetur euismod turpis, id tempor metus laoreet eget. Nulla facilisi.</p>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ecomerce.html">Ecommerce</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2024 YARN. All Rights Reserved.</p>
+    </div>
+</footer>
+  <!-- FIXED HEADER -->
+  <script src="js/jquery-latest.min.js"></script>
+<script>
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 70) {
+            $(".header-wrp").addClass("fixed-header");
+        }
+        else{
+            $(".header-wrp").removeClass("fixed-header");
+        }
+    });
+</script>
+<!-- SLIDER IMAGE -->
+<script>
+    $(function() {
+var inWrap = $('.inner-wrapper');
+$('.prev').on('click', function() {
+  inWrap.animate({left: '0%'}, 300, function(){
+    inWrap.css('left', '-100%');
+    $('.slide').first().before($('.slide').last());
+  });
+});
+$('.next').on('click', function() {
+  inWrap.animate({left: '-200%'}, 300, function(){
+    inWrap.css('left', '-100%');
+    $('.slide').last().after($('.slide').first());
+  });
+});
+})
+</script>
+</body>
+</html>
